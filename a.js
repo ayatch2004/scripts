@@ -1,6 +1,4 @@
-while(true){
-    if(document.readyState != 'complete')
-        continue;
+if(document.readyState === 'complete'){
     if(window.location.pathname === '/bvi-en/lab-education/tools/order-book-position-book-tool/'){
         setTimeout(() => {
             const currencySwitch = document.querySelector('.block-order_position_book > div > div > div > div > div:nth-child(2) > div > div')
@@ -9,6 +7,6 @@ while(true){
                 const USDJPY = document.querySelector('.block-order_position_book > div > div > div > div > div:nth-child(2) > div > ul > li:nth-child(8) > button')
                 USDJPY.click()
             }, 250);
-        }, 250);
+        }, 750);
     }
 }
