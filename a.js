@@ -1,4 +1,6 @@
-if(document.readyState === 'complete'){
+while(true){
+    if(document.readyState != 'complete')
+        continue;
     if(window.location.pathname === '/bvi-en/lab-education/tools/order-book-position-book-tool/'){
         setTimeout(() => {
             const currencySwitch = document.querySelector('.block-order_position_book > div > div > div > div > div:nth-child(2) > div > div')
